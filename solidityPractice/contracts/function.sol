@@ -5,22 +5,6 @@ import "hardhat/console.sol";
 
 contract ReceiveFallback {
 
-    //Functions
-    uint public num = 2;
-    function pureFunction() public pure returns(uint product, uint sum){
-        //IN pure function we can't access state level variable but we can define local variable or even perform calculation
-        uint a = 1; 
-        uint b = 2;
-        product = a * b;
-        sum = a + b; 
-   }
-   function viewFunction() public view returns(uint product, uint sum){
-       //inview function we use State Level Variable 
-        uint a= 2;
-        product = a * num ;
-        sum = 3 + num; 
-   }
-
     uint256 public countReceive;
     uint256 public countFallback;
 
