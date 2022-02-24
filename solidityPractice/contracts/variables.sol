@@ -10,7 +10,7 @@ contract VarVisibility1 {
     uint256 internal height; 
     // 3. Public
     // Public variable can be called by anyone
-    string public Name = "tariq jokhio";
+    string public Name = "tariq jokhio"; // by default this is state level variable
     
     function updateAge(uint _age) public {
         age = _age;
@@ -20,7 +20,15 @@ contract VarVisibility1 {
 }
 
 
-contract VarVisibility2 is VarVisibility1 {
+contract Variable is VarVisibility1 {
+    //Types of Variable
+    
+    //1. State Variables − Variables whose values are permanently stored in a contract storage.
+
+    //2. Local Variables − Variables whose values are present till function is executing.
+
+    //3. Global Variables − Special variables exists in the global namespace used to get information about the blockchain.
+    //one example of Global variable is msg.sender (address payable) 
 
     function updateHeight(uint _height) public {
         //height = _height / age; //Solidity doesn't allow us to call private variable

@@ -25,7 +25,7 @@ async function main() {
   //const height  = await var1.height; // solidity  doesn't allow to acces internal variable
   //console.log('Name is ', name ,'and Height is ', height);
 
-  const Var2 = await ethers.getContractFactory("VarVisibility2");
+  const Var2 = await ethers.getContractFactory("Variable");
   const var2 = await Var2.deploy();
 
   await var2.deployed();
