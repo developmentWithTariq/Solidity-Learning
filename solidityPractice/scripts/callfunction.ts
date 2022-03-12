@@ -1,5 +1,6 @@
 import { ethers } from "hardhat";
-import {  ContractD__factory, ContractD, ContractE__factory, ContractE, ContractF__factory, ContractF, ContractC__factory, ContractC, CallFunctionDemo__factory, CallFunctionDemo, SecondContract__factory, SecondContract } from "../typechain";
+import {  ContractD__factory, ContractD, ContractE__factory, ContractE, ContractF__factory, ContractF, ContractC__factory, ContractC, CallFunctionDemo__factory, CallFunctionDemo, SecondContract__factory, SecondContract, CallBackDemo } from "../typechain";
+import { CallBackDemo__factory } from "../typechain/factories/CallBackDemo__factory";
 
 async function main() {
  
@@ -21,6 +22,22 @@ async function main() {
   const txt2 = await callFunction.delegatecallFunction();
   console.log("value of callfunctionDemo after", await callFunction.val());
   // console.log("Data  is ",txt );
+  /*
+  this is for static call
+  const txt3 = await callFunction.staitcCallFunction();
+  console.log("value of callfunctionDemo after", await callFunction.val());
+  */
+
+  // for callback function call
+  const CallBackDemo:CallBackDemo__factory = await ethers.getContractFactory("CallBackDemo");
+  const callBackDemo:CallBackDemo = await CallBackDemo.deploy();
+  await callBackDemo.deployed();
+
+  console.log("callFunction deployed to:", callBackDemo.address);
+
+  callBackDemo.testFunctionCall();
+
+  
 }
 
 
