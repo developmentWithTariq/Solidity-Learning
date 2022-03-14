@@ -76,3 +76,35 @@ contract C {
         return b.getData(); //getData is the function of contract A
     }
 }
+
+
+contract ValueStorage  {
+    uint public value = 2;
+    function update() virtual  public {
+        value += 1;
+        }
+    
+}
+contract ValueStorage1 is ValueStorage {
+    function update() public virtual override {
+        value *= 2;
+        ValueStorage.update();
+    }
+}
+contract ValueStorage2 is ValueStorage {
+    function update() public virtual override {
+        value += 10;
+        ValueStorage.update();
+        // supper.update() this and above are the same
+    }
+}
+// multiple inheritence for the same herarci 
+contract ValueStorage3 is ValueStorage2 , ValueStorage1{ //right side will be used in super.update here the valueStorage1 will be call
+     
+    function update() public override(ValueStorage2,ValueStorage1) { 
+        value *= 8;     
+        super.update();
+        
+    }
+}
+
