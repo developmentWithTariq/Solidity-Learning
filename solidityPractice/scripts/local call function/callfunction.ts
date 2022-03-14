@@ -27,16 +27,8 @@ async function main() {
   const txt3 = await callFunction.staitcCallFunction();
   console.log("value of callfunctionDemo after", await callFunction.val());
   */
-
-  // for callback function call
-  const CallBackDemo:CallBackDemo__factory = await ethers.getContractFactory("CallBackDemo");
-  const callBackDemo:CallBackDemo = await CallBackDemo.deploy();
-  await callBackDemo.deployed();
-
-  console.log("callFunction deployed to:", callBackDemo.address);
-
-  callBackDemo.testFunctionCall();
-
+  // for library call function   
+  await callFunction.callFunctionLibrary(); //calling the library function is work like a delegate call
   
 }
 
