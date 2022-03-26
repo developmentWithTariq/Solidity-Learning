@@ -37,10 +37,10 @@ contract String {
         delete statArray[1];
         return statArray;
     }
-    // function getBytesName(string memory firstName, string memory lastName)public pure returns( bytes memory   ) {
-        
-    // }
-
-
+    function getIndexValue(uint _index) public view returns( uint value){
+    //     //get value of given index from array 
+        value = myArray[_index];
+        return value;
+    }
 }
   
