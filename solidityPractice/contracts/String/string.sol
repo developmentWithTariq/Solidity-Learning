@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "hardhat/console.sol";
 // public private Variable Scope
-contract String {
+contract StringType {
 
 
     
