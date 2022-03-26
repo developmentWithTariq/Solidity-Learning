@@ -1,6 +1,5 @@
 import { ethers } from "hardhat";
-import { Math, Math__factory, Overload__factory } from "../typechain";
-import { SolidityTest__factory } from "../typechain/factories/SolidityTest__factory";
+import { Math, Math__factory, Overload__factory } from "../../typechain";
 
 async function main() {
  
