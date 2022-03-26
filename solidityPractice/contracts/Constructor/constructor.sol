@@ -21,9 +21,12 @@ import "hardhat/console.sol";
 contract ConstA {
     //if we define constructor of just Child Contract this will work
     //if we define contructor of parent Contract with argument we should define constructor of child contract otherwise solidity will not allow us
+    uint public value;
     constructor(uint a){
-
+        value = a;
+        
     }
+    
 }
 
 
@@ -37,18 +40,22 @@ contract ConstB is ConstA {
     // constructor() ContractA(2){
 
     // }
-     constructor(uint b) ConstA(b ) {
-
-     }
+    
+    constructor(uint b) ConstA(b ) {
+        
+    }
+    function abc () public view returns(uint) {
+        return value;
+    }
+     
 
 }
 contract ConstC {
-    function checkfunctionA() public  {
+    function checkfunctionA(uint _value) public returns(uint) {
         // ConstB b = new ConstB();
-        ConstB b = new ConstB(3);
+        ConstB b = new ConstB(_value);
+        return b.abc();
     }
-    function checkfunctionB() public view returns(uint256) {
-       
-    }
+    
 }
    

@@ -1,5 +1,5 @@
 import { ethers } from "hardhat";
-import { ConstC, ConstC__factory, Demo2, Demo2__factory, Overload__factory } from "../typechain";
+import { ConstC, ConstC__factory, Demo2, Demo2__factory, Overload__factory } from "../../typechain";
 
 async function main() {
  
