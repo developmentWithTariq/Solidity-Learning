@@ -1,5 +1,5 @@
 import { ethers } from "hardhat";
-import { Events, Events__factory } from "../typechain";
+import { Events, Events__factory } from "../../typechain";
 
 
 
