@@ -1,5 +1,5 @@
 import { ethers } from "hardhat";
-import {  ContractD__factory, ContractD, ContractE__factory, ContractE, ContractF__factory, ContractF, ContractC__factory, ContractC } from "../typechain";
+import {  ContractD__factory, ContractD, ContractE__factory, ContractE, ContractF__factory, ContractF, ContractC__factory, ContractC } from "../../typechain";
 
 async function main() {
  
