@@ -1,6 +1,6 @@
 import { ethers } from "hardhat";
-import { Demo, Demo__factory, WithDrawal__factory } from "../typechain";
-import { SolidityTest__factory } from "../typechain/factories/SolidityTest__factory";
+import { Demo, Demo__factory, WithDrawal__factory } from "../../typechain";
+import { SolidityTest__factory } from "../../typechain/factories/SolidityTest__factory";
 
 async function main() {
   const [owner, addr1,addr2 ] =await ethers.getSigners();
