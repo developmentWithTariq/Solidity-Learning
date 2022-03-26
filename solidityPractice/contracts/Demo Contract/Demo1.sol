@@ -22,7 +22,7 @@ contract Demo2 {
 
     function createExample(string memory _name) public returns(address ) {
         /*
-        1. This function create a instanse of Demo1 Contract with the of d1
+        1. This function create a new instanse of Demo1 Contract with the of d1
         2. Update the demo1Address to address of d1
         3. Return the Address of d1
         */
@@ -34,7 +34,7 @@ contract Demo2 {
     function getNameOfContract(address _addr1)public view returns(string memory) {
         /* 
         1. This function takes address 
-        2. Create the new instanse and Pass this address to the Demo1 contract
+        2. Create the refrence of Demo1 and Pass this address to the Demo1 contract
         3. D1 return the Name of the given address 
         */
         Demo1 d1 = Demo1(_addr1);
