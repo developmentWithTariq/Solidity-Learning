@@ -1,5 +1,5 @@
 import { ethers } from "hardhat";
-import { Loop, Loop__factory } from "../typechain";
+import { Loop, Loop__factory } from "../../typechain";
 
 async function main() {
  
