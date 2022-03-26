@@ -1,6 +1,6 @@
 import { ethers } from "hardhat";
-import { ContractMath } from "../typechain/ContractMath";
-import { ContractMath__factory } from "../typechain/factories/ContractMath__factory";
+import { ContractMath } from "../../typechain/ContractMath";
+import { ContractMath__factory } from "../../typechain/factories/ContractMath__factory";
 
 
 
