@@ -2,7 +2,8 @@
 pragma solidity ^0.8.0;
 
 import "hardhat/console.sol";
-contract VarVisibility1 {
+contract VariableScope {
+    // Variable Scope
     // 1. Private Variable
     uint256 private age; //this is only call by this contract
     // 1. Internal Variable
@@ -20,7 +21,7 @@ contract VarVisibility1 {
 }
 
 
-contract Variable is VarVisibility1 {
+contract Variable is VariableScope {
     //Types of Variable
     
     //1. State Variables − Variables whose values are permanently stored in a contract storage.

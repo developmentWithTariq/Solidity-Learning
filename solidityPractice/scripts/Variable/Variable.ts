@@ -8,12 +8,12 @@ import { ethers } from "hardhat";
 
 async function main() {
  
-  const Var1 = await ethers.getContractFactory("VarVisibility1");
+  const Var1 = await ethers.getContractFactory("VariableScope");
   const var1 = await Var1.deploy();
 
   await var1.deployed();
 
-  console.log("Greeter deployed to:", var1.address);
+  console.log("Var 1 deployed to:", var1.address);
 
   await var1.updateAge(21);
 
