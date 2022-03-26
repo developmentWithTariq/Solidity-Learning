@@ -13,9 +13,9 @@ contract RequestDemo{
         console.log("RequestDemo :: receivedRequest after success", success);
     }
     */
-    function (uint256) external view returns(uint256) myCall;
+    // function (uint256) external view returns(uint256) myCall;
 
-    function receivedFunctionRequest(function (uint256) external view returns(uint256) demoCall) public {
+    function receivedFunctionRequest(function (uint256) external view returns(uint256) demoCall) public view {
         // myCall = demoCall;
         uint256 valueAfter = demoCall(23);
         console.log("receivedFunctionRequest", valueAfter);

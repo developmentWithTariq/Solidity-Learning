@@ -1,6 +1,6 @@
 import { ethers } from "hardhat";
-import {  ContractD__factory, ContractD, ContractE__factory, ContractE, ContractF__factory, ContractF, ContractC__factory, ContractC, CallFunctionDemo__factory, CallFunctionDemo, SecondContract__factory, SecondContract, CallBackDemo, RequestDemo__factory, RequestDemo } from "../typechain";
-import { CallBackDemo__factory } from "../typechain/factories/CallBackDemo__factory";
+import {  ContractD__factory, ContractD, ContractE__factory, ContractE, ContractF__factory, ContractF, ContractC__factory, ContractC, CallFunctionDemo__factory, CallFunctionDemo, SecondContract__factory, SecondContract, CallBackDemo, RequestDemo__factory, RequestDemo } from "../../typechain";
+import { CallBackDemo__factory } from "../../typechain/factories/CallBackDemo__factory";
 
 async function main() {
   
