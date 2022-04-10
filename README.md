@@ -6,6 +6,7 @@ HI, Everyone!
 
 For the last two months, I was learning Solidity programming language and I have created a repository in this repo I added all the topics of Solidity which I have learned from (Panacloud bootcamp2021) with code in a separate folder with some explanation. I hope it will help you learn the Solidity programming language if this helps you don't forget to give a star to the repository and share it with your friends. The link is given below:
 Now I am learning and working on the following project.
+which will be publish to this repository 
 
 Project: Create a Token and Launch ICO/IEO/IDO
 
