@@ -17,7 +17,7 @@ contract Overload {
     function getSum(uint a, uint b, uint c) public pure returns(uint){      
         return a + b + c;
    }
-    function getSum(uint256 a, bool b) public pure returns(uint){      
+    function getSum(uint256 a, bool b) public pure returns(uint){
        return a ;
    }
     function getSum( bool b, uint256 a) public pure returns(uint){      
